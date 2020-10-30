@@ -1,0 +1,42 @@
+{
+  "name": "akvilon.ru",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "build_w": "webpack --config ./webpack_b",
+    "build_index": "terser ./js/index.js -c -m -o ./js/jsmin/index.min.js",
+    "build_header": "terser ./js/header.js -c -m -o ./js/jsmin/header.min.js",
+    "build": "npm run build_w && npm run build_index && npm run build_header"
+  },
+  "dependencies": {
+    "babel-preset-react": "^6.24.1",
+    "bootstrap": "^4.5.2",
+    "css-loader": "^4.3.0",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "path": "^0.12.7",
+    "react": "^16.8.6",
+    "react-bootstrap": "^0.32.4",
+    "react-bootstrap-table": "^4.3.1",
+    "react-dom": "^16.8.6",
+    "react-router-dom": "^4.3.1",
+    "react-scroll-up-button": "^1.6.4",
+    "style-loader": "^1.3.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.2.2",
+    "@babel/node": "^7.2.2",
+    "@babel/plugin-proposal-class-properties": "^7.10.4",
+    "@babel/preset-env": "^7.2.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.1.0",
+    "babel-minify-webpack-plugin": "^0.3.1",
+    "babel-polyfill": "^6.20.0",
+    "babel-preset-minify": "^0.5.1",
+    "terser-webpack-plugin": "^4.2.3",
+    "uglifyjs-webpack-plugin": "^2.2.0",
+    "webpack": "^4.27.1",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.10"
+  }
+}

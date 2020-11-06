@@ -6,10 +6,13 @@ module.exports = {
 
     entry:
     {
-      AccountUsers: './js/jsclasses/AccountUsers.js',
+      CatalogList: './js/react/CatalogList.js',
+      ProductDetail: './js/react/ProductDetail.js',
+      ProductOne: './js/react/ProductOne.js',
+
+      /*AccountUsers: './js/jsclasses/AccountUsers.js',
       CartList: './js/jsclasses/CartList.js',
       CategList: './js/jsclasses/CategList.js',
-      CatalogList: './js/jsclasses/CatalogList.js',
       CategListSimple: './js/jsclasses/CategListSimple.js',
       CategManagerList: './js/jsclasses/CategManagerList.js',
       ChangePwd: './js/jsclasses/ChangePwd.js',
@@ -18,14 +21,12 @@ module.exports = {
       ModalYesNo: './js/jsclasses/ModalYesNo.js',
       OrdersManagerList: './js/jsclasses/OrdersManagerList.js',
       OrdersUserList: './js/jsclasses/OrdersUserList.js',
-      ProductDetail: './js/jsclasses/ProductDetail.js',
-      ProductOne: './js/jsclasses/ProductOne.js',
       ProductsManagerList: './js/jsclasses/ProductsManagerList.js',
       RestorePwd: './js/jsclasses/RestorePwd.js',
       UsersManagerList: './js/jsclasses/UsersManagerList.js',
       SearchProduct: './js/jsclasses/SearchProduct.js',
       Test: './js/jsclasses/Test.js',
-      Registration: './js/jsclasses/Registration.js',
+      Registration: './js/jsclasses/Registration.js',*/
 
 
       },
@@ -33,7 +34,7 @@ module.exports = {
       path: path.resolve(__dirname, 'js/jsmin'),
         filename: '[name].js',
     },
-    /*devtool:'source-map',*/
+    devtool:'source-map',
     plugins: [
       new webpack.DefinePlugin({
         'process.env': {

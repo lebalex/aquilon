@@ -99,7 +99,7 @@ $(document).ready(function() {
 	});
 
 	// Product List
-	$('#list-view').click(function() {
+	$('#list-view').on("click",function(e) {
 		$('#content .product-grid > .clearfix').remove();
 		$(this).addClass('active');
 		$('#grid-view').removeClass('active');
@@ -113,7 +113,8 @@ $(document).ready(function() {
 	});
 
 	// Product Grid
-	$('#grid-view').click(function() {
+	//$('#grid-view').click(function() {
+		$('#grid-view').on("click",function(e) {
 		// What a shame bootstrap does not take into account dynamically loaded columns
 		var cols = $('#column-right, #column-left').length;
 		$(this).addClass('active');
@@ -132,7 +133,7 @@ $(document).ready(function() {
 			document.cookie = "display=grid";
 		}
 	});
-	$('#grid-view, #list-view').click(function(){
+	$('#grid-view, #list-view').on("click",function(e) {
 		$.fn.matchHeight._update();
 	});	
 

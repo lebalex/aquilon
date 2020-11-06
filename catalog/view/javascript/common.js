@@ -96,7 +96,7 @@ $(document).ready(function() {
 	$('#grid-view').click(function() {
 		// What a shame bootstrap does not take into account dynamically loaded columns
 		var cols = $('#column-right, #column-left').length;
-
+		alert(cols);
 		if (cols == 2) {
 			$('#content .product-list').attr('class', 'product-layout product-grid col-lg-6 col-md-6 col-sm-12 col-xs-12');
 		} else if (cols == 1) {

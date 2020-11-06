@@ -1,0 +1,17 @@
+.image .hover-img {
+      -webkit-transition-duration: 500ms;
+      transition-duration: 500ms;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 10;
+      opacity: 0;
+      visibility: hidden; }
+      .product-thumb:hover .hover-img {
+        opacity: 0.5;
+        visibility: visible; }
+        .product-thumb:hover .imgprimary{
+            opacity: 0;
+            visibility: visible; }
+    

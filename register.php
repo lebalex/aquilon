@@ -4,9 +4,9 @@ include_once 'header.php';
 
 <div id="account-register" class="container">
   <ul class="breadcrumb">
-        <li><a href="https://livedemo00-opencart.template-help.com/opencart_prod-23526/index.php?route=common/home"><i class="fa fa-home"></i></a></li>
-        <li><a href="https://livedemo00-opencart.template-help.com/opencart_prod-23526/index.php?route=account/account">Личный кабинет</a></li>
-        <li><a href="https://livedemo00-opencart.template-help.com/opencart_prod-23526/index.php?route=account/register">Регистрация</a></li>
+        <li><a href="/"><i class="fa fa-home"></i></a></li>
+        <li><a href="/login">Личный кабинет</a></li>
+        <li><a href="/register">Регистрация</a></li>
       </ul>
     <div class="row">
                 <div id="content" class="col-sm-12">

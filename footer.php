@@ -64,14 +64,14 @@
             <div class="container">Powered By <a href="http://www.opencart.com">OpenCart</a><br> Drug Store © 2020. Design by <a class="zemez" href="https://zemez.io"> Zemez</a></div>
         </div-->
     </footer>
-    <div class="ajax-overlay"></div>
+    <!--div class="ajax-overlay"></div>
         <div class="ajax-quickview-overlay">
             <span class="ajax-quickview-overlay__preloader"></span>
-        </div>
+        </div-->
     <script src="catalog/view/javascript/zemez894/swiper/swinit.js" type="text/javascript"></script>
         <script src="catalog/view/theme/zemez894/js/device.min.js" type="text/javascript"></script>
         <script src="catalog/view/theme/zemez894/js/livesearch.min.js" type="text/javascript"></script>
-        <script src="catalog/view/theme/zemez894/js/common.js" type="text/javascript"></script>
+        <!--script src="catalog/view/theme/zemez894/js/common.js" type="text/javascript"></script-->
         <script src="catalog/view/theme/zemez894/js/script.js" type="text/javascript"></script>
     </div>
 </body>

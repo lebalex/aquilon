@@ -1,3 +1,11 @@
+<?php
+include_once 'includes/functions.php';
+sec_session_start();
+
+
+
+?>
+
 <!DOCTYPE html>
 <!--[if IE]><![endif]-->
 <!--[if IE 8 ]><html dir="ltr" lang="en" class="ie8"><![endif]-->
@@ -44,7 +52,10 @@
     <script src="catalog/view/theme/zemez894/js/zemez_single_category/bootstrap-tabcollapse.js" type="text/javascript"></script>
 
 
-
+    <script src="/js/react_init/react.production.min.js" crossorigin></script>
+    <script src="/js/react_init/react-dom.production.min.js" crossorigin></script>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    
 
 
 </head>
@@ -103,7 +114,7 @@
                                                 <a href="/cart">
                                                     <i class="material-icons-local_grocery_store"></i>
                                                     <strong>Корзина</strong><br>
-                                                    <span id="cart-total3" class="cart-total2">0</span>
+                                                    <span id="cart-total3" class="cart-total2"><?= getCartDataCount() ?></span>
                                                 </a>
 
 
@@ -113,7 +124,7 @@
                                                 <a href="/favor">
                                                     <i class="material-icons-favorite_border"></i>
                                                     <strong>Избранное</strong><br>
-                                                    <span id="wishlist-total3">0</span>
+                                                    <span id="wishlist-total3"><?= getFavouritetDataCount() ?></span>
                                                 </a>
                                             </span>
                                             <div id="search" class="search pull-right">

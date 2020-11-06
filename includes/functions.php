@@ -49,7 +49,7 @@ function login($login, $password)
 {
     global $mysqli;
     if ($stmt = $mysqli->prepare("SELECT id, name, email, pwd, discont
-        FROM dsg_users
+        FROM aquilon_users
        WHERE registr=1 and email = ?
         LIMIT 1")) {
         $stmt->bind_param('s', $login);
@@ -113,7 +113,7 @@ function check_user_main($id, $email, $name, $login_string)
 {
     $user_browser = $_SERVER['HTTP_USER_AGENT'];
     global $mysqli;
-    if ($stmt = $mysqli->prepare("SELECT pwd, discont FROM dsg_users WHERE id = ? LIMIT 1")) {
+    if ($stmt = $mysqli->prepare("SELECT pwd, discont FROM aquilon_users WHERE id = ? LIMIT 1")) {
         $stmt->bind_param('i', $id);
         $stmt->execute();
         $stmt->store_result();
@@ -159,7 +159,7 @@ function getFavouritet()
 {
     global $mysqli;
     if (isset($_SESSION['user']) && get_class($_SESSION['user']) == 'User_Model') {
-        $stmt = $mysqli->prepare("select id_product from dsg_favouritet where id_user = " . $_SESSION['user']->getUser_id());
+        $stmt = $mysqli->prepare("select id_product from aquilon_favouritet where id_user = " . $_SESSION['user']->getUser_id());
         $stmt->execute();
         $result = $stmt->get_result();
         while ($value = $result->fetch_row()) {
@@ -217,7 +217,7 @@ function rand_passwd($length = 8, $chars = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJ
 {
     return substr(str_shuffle($chars), 0, $length);
 }
-function getCatalogsName($fromDb)
+/*function getCatalogsName($fromDb)
 {
     $arr = getCateg($fromDb);
     foreach ($arr as $item) {
@@ -229,7 +229,7 @@ function getCateg($fromDb = false)
 {
     if (!isset($_SESSION['categories']) || $fromDb) {
         global $mysqli;
-        $stmt = $mysqli->prepare("select id, name, img from dsg_categ where active=1 order by id");
+        $stmt = $mysqli->prepare("select id, parent_id, name, img from aquilon_categ where active=1 order by id");
         $stmt->execute();
         $result = $stmt->get_result();
         $outp = $result->fetch_all(MYSQLI_ASSOC);
@@ -237,16 +237,15 @@ function getCateg($fromDb = false)
             $categList[] = new Categ_Model($item['id'], $item['name'], $item['img']);
         }
         $_SESSION['categories'] = $categList;
-        //$_SESSION['categories'] = $outp;
         $stmt->close();
     }
     return $_SESSION['categories'];
-}
+}*/
 function getKeyWords()
 {
     if (!isset($_SESSION['keywords'])) {
         global $mysqli;
-        $stmt = $mysqli->prepare("select name from dsg_products where active=1 order by id");
+        $stmt = $mysqli->prepare("select name from aquilon_products where active=1 order by id");
         $stmt->execute();
         $result = $stmt->get_result();
         //$outp = $result->fetch_all(MYSQLI_ASSOC);

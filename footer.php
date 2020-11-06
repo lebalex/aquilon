@@ -75,6 +75,11 @@
         <script src="/catalog/view/theme/zemez894/js/script.js" type="text/javascript"></script>
 
 
+    <script src="/js/superfish.js" type="text/javascript"></script>
+    <script src="/js/sfmenu.js" type="text/javascript"></script>
+
+
+    <script src="/js/jquery.rd-navbar.js" type="text/javascript"></script>
 
     </div>
 </body>

@@ -1,4 +1,23 @@
+-- --------------------------------------------------------
+-- Хост:                         127.0.0.1
+-- Версия сервера:               6.0.6-alpha-community - MySQL Community Server (GPL)
+-- Операционная система:         Win32
+-- HeidiSQL Версия:              11.0.0.5919
+-- --------------------------------------------------------
 
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET NAMES utf8 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+
+
+-- Дамп структуры базы данных aquilon_db
+DROP DATABASE IF EXISTS `aquilon_db`;
+CREATE DATABASE IF NOT EXISTS `aquilon_db` /*!40100 DEFAULT CHARACTER SET utf8 */;
+-- create user 'aquilon'@'localhost' identified by 'jysb87td';
+grant all privileges on aquilon_db.* to 'aquilon'@'localhost';
+
+USE `aquilon_db`;
 
 -- Дамп структуры для таблица aquilon_db.aquilon_categ
 DROP TABLE IF EXISTS `aquilon_categ`;

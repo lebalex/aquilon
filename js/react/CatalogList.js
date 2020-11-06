@@ -245,7 +245,7 @@ export class CatalogList extends React.Component {
               <div className="box megamenu">
 
 
-                <ul className="sf-menu">
+                <ul className={`sf-menu sf-js-enabled sf-arrow ${Math.random()}`}>
 
                   {items.map(item => (
                     this.createLi(item)

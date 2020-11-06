@@ -11,15 +11,7 @@ $product_id = getParam('product', -1);
 </div>
   
 
-    <script>
-      ;
-      (function($) {
-        $(window).load(function() {
-          var o = $('.sf-menu');
-          o.superfish();
-        });
-      })(jQuery);
-    </script>
+
 
 
 

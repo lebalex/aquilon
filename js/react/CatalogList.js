@@ -1,5 +1,7 @@
 import { ProductDetail } from './ProductDetail';
 import { ProductOne } from './ProductOne';
+import { Helmet } from "react-helmet";
+
 export class CatalogList extends React.Component {
   constructor(props) {
     super(props);
@@ -8,7 +10,7 @@ export class CatalogList extends React.Component {
       isLoadedP: false,
       items: [],
       itemsProduct: [],
-      arrayProd:[],
+      arrayProd: [],
       categ_id: this.props.categ_id,
       product_id: this.props.product_id,
       gridView: true,
@@ -45,7 +47,7 @@ export class CatalogList extends React.Component {
   ProductLists(c, p) {
     //console.log(c, p)
     let url = `/includes/get_data.php?x=get_all_products&categ_id=${c}&product=${p}`;
-    if(c==='-1' && p==='-1')
+    if (c === '-1' && p === '-1')
       url = '/includes/get_data.php?x=get_top_products';
     fetch(url)
       .then(res => res.json())
@@ -53,13 +55,13 @@ export class CatalogList extends React.Component {
         (result) => {
 
           //console.log(result)
-    let count = (result.length > this.state.step) ? this.state.countPhoto : result.length;
-    if (count > result.length) count = result.length;
-    let arrayProd = result.slice(0);
-    arrayProd.splice(count);
+          let count = (result.length > this.state.step) ? this.state.countPhoto : result.length;
+          if (count > result.length) count = result.length;
+          let arrayProd = result.slice(0);
+          arrayProd.splice(count);
 
-    //console.log(result);
-    //console.log(arrayProd);
+          //console.log(result);
+          //console.log(arrayProd);
 
 
           this.setState({
@@ -67,7 +69,7 @@ export class CatalogList extends React.Component {
             product_id: p,
             isLoadedP: true,
             itemsProduct: result,
-            arrayProd:arrayProd
+            arrayProd: arrayProd
           });
           if (this.state.gridView) this.gridView();
           else this.listView()
@@ -122,30 +124,28 @@ export class CatalogList extends React.Component {
   getCategName(categ_id) {
     //console.log(categ_id);
     //console.log(this.state.items);
-    
+
     let d = "Популярные товары";
     this.state.items.forEach(function (item, i, arr) {
-      if(item.children!=null)
-      {
+      if (item.children != null) {
         item.children.forEach(function (item_c1, i, arr) {
           //console.log(item_c1.id);
-          if(item_c1.children!=null)
-          {
+          if (item_c1.children != null) {
             item_c1.children.forEach(function (item_c2, i, arr) {
               //console.log(item_c2.id);
               if (item_c2.id === parseInt(categ_id)) d = item_c2.name;
 
             })
-          }else{
+          } else {
             if (item_c1.id === parseInt(categ_id)) d = item_c1.name;
 
           }
         })
-      }else{
+      } else {
         if (item.id === parseInt(categ_id)) d = item.name;
 
       }
-      
+
     });
     return d;
   }
@@ -167,17 +167,17 @@ export class CatalogList extends React.Component {
     let winTop = window.pageYOffset;
     let winHeight = window.innerHeight;
     let docHeight = window.document.body.offsetHeight;
-    
+
     if ((winTop / (docHeight - winHeight)) > 0.85) {
       if (this.state.itemsProduct.length > this.state.countPhoto) {
 
-        let countPhoto= this.state.countPhoto + this.state.step;
+        let countPhoto = this.state.countPhoto + this.state.step;
         let count = (this.state.itemsProduct.length > this.state.step) ? countPhoto : this.state.itemsProduct.length;
         if (count > this.state.itemsProduct.length) count = this.state.itemsProduct.length;
-        
 
-    let arrayProd = this.state.itemsProduct.slice(0);
-    arrayProd.splice(count);
+
+        let arrayProd = this.state.itemsProduct.slice(0);
+        arrayProd.splice(count);
 
         this.setState({
           countPhoto: countPhoto,
@@ -199,7 +199,7 @@ export class CatalogList extends React.Component {
     item.children.forEach(element => {
       if (element.children != null) {
         LIST.push(<li className="sf-with-mega">
-          <a href="#" data-letters="Cosmetics"><span>{element.name}</span></a>
+          <a href="#"><span>{element.name}</span></a>
           <ul className="sf-mega" style={{ backgroundImage: "url(/img/menu-bg-887x420.jpg)" }}>
             <li className="sf-mega_row">
               <div className="sf-mega_section">
@@ -273,16 +273,19 @@ export class CatalogList extends React.Component {
               {/** товары*/}
               <div className="row">
 
-              {arrayProd.map(item => (
-                      <ProductOne  style={this.state.style} key={item.id} items={item} onClickProduct={() => this.clickProduct(item.id)}/>
-              ))}
+                {arrayProd.map(item => (
+                  <ProductOne style={this.state.style} key={item.id} items={item} onClickProduct={() => this.clickProduct(item.id)} />
+                ))}
 
-    
+
 
               </div>
             </div>
           </div>
+          <Helmet>
 
+            <script>$('.sf-menu').superfish();</script>
+          </Helmet>
         </div>
       );
     }

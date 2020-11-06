@@ -189,7 +189,7 @@ export class CatalogList extends React.Component {
   childrenLi(element) {
     let LIST = [];
     element.forEach(element2 => {
-      LIST.push(<li><a href="#" onClick={() => this.ChangCateg(element2.id)}>{element2.name}</a></li>);
+      LIST.push(<li><a href="#" href_m={`/catalog/${element2.id}`} onClick={() => this.ChangCateg(element2.id)}>{element2.name}</a></li>);
     })
     return LIST;
   }
@@ -208,7 +208,7 @@ export class CatalogList extends React.Component {
                 </ul></div></li></ul></li>);
 
       } else {
-        LIST.push(<li><a href={element.id} onClick={() => this.ChangCateg(element.id)}>{element.name}</a></li>);
+        LIST.push(<li><a href="#" href_m={`/catalog/${element.id}`} onClick={() => this.ChangCateg(element.id)}>{element.name}</a></li>);
       }
     });
     return LIST;
@@ -283,8 +283,8 @@ export class CatalogList extends React.Component {
             </div>
           </div>
           <Helmet>
+          <script src="/js/sfmenu.js" type="text/javascript" />
 
-            <script>$('.sf-menu').superfish();</script>
           </Helmet>
         </div>
       );

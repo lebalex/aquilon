@@ -4,9 +4,10 @@
   "private": true,
   "scripts": {
     "build_w": "webpack --config ./webpack_b",
-    "build_index": "terser ./js/index.js -c -m -o ./js/jsmin/index.min.js",
-    "build_header": "terser ./js/header.js -c -m -o ./js/jsmin/header.min.js",
-    "build": "npm run build_w && npm run build_index && npm run build_header"
+    "build_superfish": "terser ./js/superfish.js -c -m -o ./js/superfish.min.js",
+    "build_sfmenu": "terser ./js/sfmenu.js -c -m -o ./js/sfmenu.min.js",
+    "build_rd-navbar": "terser ./js/jquery.rd-navbar.js -c -m -o ./js/jquery.rd-navbar.min.js",
+    "build": "npm run build_w && npm run build_superfish && npm run build_sfmenu && npm run build_rd-navbar"
   },
   "dependencies": {
     "babel-preset-react": "^6.24.1",

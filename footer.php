@@ -74,14 +74,6 @@
         <!--script src="catalog/view/theme/zemez894/js/common.js" type="text/javascript"></script-->
         <script src="/catalog/view/theme/zemez894/js/script.js" type="text/javascript"></script>
 
-        <script>
-		/*$(window).load(function () {
-            var o = $('.sf-menu');
-            alert(o.text());
-			o.superfish();
-		});*/
-
-    </script>
 
 
     </div>

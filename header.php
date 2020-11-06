@@ -45,8 +45,14 @@ sec_session_start();
     <script src="/catalog/view/javascript/jquery/jquery-2.1.1.min.js" type="text/javascript"></script>
     <script src="/catalog/view/javascript/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
 
-    <script src="/catalog/view/theme/zemez894/js/zemez_megamenu/superfish.min.js" type="text/javascript"></script>
-    <script src="/catalog/view/theme/zemez894/js/zemez_megamenu/jquery.rd-navbar.min.js" type="text/javascript"></script>
+    <!--script src="/catalog/view/theme/zemez894/js/zemez_megamenu/superfish.min.js" type="text/javascript"></script-->
+    <script src="/js/superfish.js" type="text/javascript"></script>
+
+    <!--script src="/catalog/view/theme/zemez894/js/zemez_megamenu/jquery.rd-navbar.min.js" type="text/javascript"></script-->
+    <script src="/js/jquery.rd-navbar.js" type="text/javascript"></script>
+    
+    
+    
     <script src="/catalog/view/javascript/zemez894/swiper/swmin.js" type="text/javascript"></script>
     <script src="/catalog/view/javascript/jquery/swiper/js/swiper.jquery.js" type="text/javascript"></script>
     <script src="/catalog/view/theme/zemez894/js/zemez_single_category/bootstrap-tabcollapse.js" type="text/javascript"></script>

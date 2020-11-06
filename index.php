@@ -8,8 +8,11 @@ $product_id = getParam('product', -1);
 <div id="product-category-lebalex">
 
 
+
+
 </div>
-  
+<!--lebalex-->
+
 
 
 

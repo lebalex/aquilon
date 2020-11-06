@@ -28,33 +28,33 @@ sec_session_start();
 
     <link href="//fonts.googleapis.com/css?family=Ubuntu:300,400,500,700&amp;subset=cyrillic" rel="stylesheet">
 
-    <link href="catalog/view/javascript/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
-    <link href="catalog/view/theme/zemez894/stylesheet/material-icons.css" rel="stylesheet">
+    <link href="/catalog/view/javascript/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <link href="/catalog/view/theme/zemez894/stylesheet/material-icons.css" rel="stylesheet">
 
-    <link href="catalog/view/javascript/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen" />
-    <link href="catalog/view/theme/zemez894/stylesheet/photoswipe.css" rel="stylesheet">
-    <link href="catalog/view/theme/zemez894/stylesheet/stylesheet.css" rel="stylesheet">
+    <link href="/catalog/view/javascript/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen" />
+    <link href="/catalog/view/theme/zemez894/stylesheet/photoswipe.css" rel="stylesheet">
+    <link href="/catalog/view/theme/zemez894/stylesheet/stylesheet.css" rel="stylesheet">
 
-    <link href="catalog/view/theme/zemez894/js/fancybox/jquery.fancybox.css" rel="stylesheet">
-    <link href="catalog/view/theme/zemez894/stylesheet/homebuilder.css" type="text/css" rel="stylesheet" media="screen" />
-    <link href="catalog/view/javascript/jquery/swiper/css/swiper.min.css" type="text/css" rel="stylesheet" media="screen" />
-    <link href="catalog/view/javascript/jquery/swiper/css/opencart.css" type="text/css" rel="stylesheet" media="screen" />
+    <link href="/catalog/view/theme/zemez894/js/fancybox/jquery.fancybox.css" rel="stylesheet">
+    <link href="/catalog/view/theme/zemez894/stylesheet/homebuilder.css" type="text/css" rel="stylesheet" media="screen" />
+    <link href="/catalog/view/javascript/jquery/swiper/css/swiper.min.css" type="text/css" rel="stylesheet" media="screen" />
+    <link href="/catalog/view/javascript/jquery/swiper/css/opencart.css" type="text/css" rel="stylesheet" media="screen" />
 
     <link href="https://livedemo00-opencart.template-help.com/opencart_prod-23526/image/catalog/favicon.png" rel="icon" />
 
-    <script src="catalog/view/javascript/jquery/jquery-2.1.1.min.js" type="text/javascript"></script>
-    <script src="catalog/view/javascript/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="/catalog/view/javascript/jquery/jquery-2.1.1.min.js" type="text/javascript"></script>
+    <script src="/catalog/view/javascript/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
 
-    <script src="catalog/view/theme/zemez894/js/zemez_megamenu/superfish.min.js" type="text/javascript"></script>
-    <script src="catalog/view/theme/zemez894/js/zemez_megamenu/jquery.rd-navbar.min.js" type="text/javascript"></script>
-    <script src="catalog/view/javascript/zemez894/swiper/swmin.js" type="text/javascript"></script>
-    <script src="catalog/view/javascript/jquery/swiper/js/swiper.jquery.js" type="text/javascript"></script>
-    <script src="catalog/view/theme/zemez894/js/zemez_single_category/bootstrap-tabcollapse.js" type="text/javascript"></script>
+    <script src="/catalog/view/theme/zemez894/js/zemez_megamenu/superfish.min.js" type="text/javascript"></script>
+    <script src="/catalog/view/theme/zemez894/js/zemez_megamenu/jquery.rd-navbar.min.js" type="text/javascript"></script>
+    <script src="/catalog/view/javascript/zemez894/swiper/swmin.js" type="text/javascript"></script>
+    <script src="/catalog/view/javascript/jquery/swiper/js/swiper.jquery.js" type="text/javascript"></script>
+    <script src="/catalog/view/theme/zemez894/js/zemez_single_category/bootstrap-tabcollapse.js" type="text/javascript"></script>
 
 
     <script src="/js/react_init/react.production.min.js" crossorigin></script>
     <script src="/js/react_init/react-dom.production.min.js" crossorigin></script>
-    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="/style.css" rel="stylesheet" type="text/css" />
     
 
 
@@ -66,7 +66,7 @@ sec_session_start();
         <div id="page-preloader" class="visible"><span class="preloader"></span></div>
         <div class="ie-warning">
             <a href="//windows.microsoft.com/en-us/internet-explorer/download-ie">
-                <img src="catalog/view/theme/zemez894/image/warning_bar_0000_us.jpg" height="75" width="1170" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
+                <img src="/catalog/view/theme/zemez894/image/warning_bar_0000_us.jpg" height="75" width="1170" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
             </a>
         </div>
     <header>

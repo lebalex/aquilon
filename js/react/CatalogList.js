@@ -121,9 +121,31 @@ export class CatalogList extends React.Component {
 
   getCategName(categ_id) {
     //console.log(categ_id);
-    let d = "Каталог";
+    //console.log(this.state.items);
+    
+    let d = "Популярные товары";
     this.state.items.forEach(function (item, i, arr) {
-      if (item.id === parseInt(categ_id)) d = item.name;
+      if(item.children!=null)
+      {
+        item.children.forEach(function (item_c1, i, arr) {
+          //console.log(item_c1.id);
+          if(item_c1.children!=null)
+          {
+            item_c1.children.forEach(function (item_c2, i, arr) {
+              //console.log(item_c2.id);
+              if (item_c2.id === parseInt(categ_id)) d = item_c2.name;
+
+            })
+          }else{
+            if (item_c1.id === parseInt(categ_id)) d = item_c1.name;
+
+          }
+        })
+      }else{
+        if (item.id === parseInt(categ_id)) d = item.name;
+
+      }
+      
     });
     return d;
   }
@@ -214,7 +236,8 @@ export class CatalogList extends React.Component {
 
           <ul className="breadcrumb">
             <li><a href="/"><i className="fa fa-home"></i></a></li>
-            <li><a href="/catalog/1">{this.getCategName(this.state.categ_id)}</a></li>
+            <li><span>{this.getCategName(this.state.categ_id)}</span></li>
+
           </ul>
 
           <div className="row">

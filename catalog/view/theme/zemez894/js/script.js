@@ -10,7 +10,7 @@ for ( var index in scripts ) {
 
 function include(scriptUrl) {
 	if ( scriptsList.indexOf(scriptUrl) == -1 ) {
-		document.write('<script src="catalog/view/theme/' + gl_path + '/' + scriptUrl + '"><\/script>');
+		document.write('<script src="/catalog/view/theme/' + gl_path + '/' + scriptUrl + '"><\/script>');
 		scriptsList.push(scriptUrl);
 	}
 }

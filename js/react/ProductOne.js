@@ -69,9 +69,9 @@ let style = this.props.style;
 
                         <div className="image">
                             <a href="#"  onClick={this.props.onClickProduct}>
-                                <img width="270" height="270" alt={item.name} title={item.id} 
+                                <img width="270" height="270" alt={item.name} title={item.name} 
                                  className="imgprimary" src={this.getImage(item.img)} />
-                                <img width="270" height="270" alt={item.name} title={item.id} 
+                                <img width="270" height="270" alt={item.name} title={item.name} 
                                 className="hover-img" src={this.getImage(item.img)} />
                             </a>
                          

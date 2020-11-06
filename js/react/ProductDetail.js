@@ -77,7 +77,7 @@ export class ProductDetail extends React.Component {
         <ul className="breadcrumb">
           <li><a href="/"><i className="fa fa-home"></i></a></li>
           <li><a href={`/catalog/${this.props.id_categ}`}>{this.props.categ_name}</a></li>
-          <li><span>{item.id}</span></li>
+          <li><span>{item.name}</span></li>
         </ul>
 
         <div className="row">

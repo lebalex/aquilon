@@ -1,6 +1,7 @@
 ;(function ($) {
     $(window).load(function () {
         var o = $('.sf-menu');
+        //alert(o.text())
         o.superfish();
         o.find('li a').each(function () {
             if ($(location).attr('href').indexOf($(this).attr('href')) >= 0){

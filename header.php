@@ -55,7 +55,7 @@ sec_session_start();
     
     <script src="/catalog/view/javascript/zemez894/swiper/swmin.js" type="text/javascript"></script>
     <script src="/catalog/view/javascript/jquery/swiper/js/swiper.jquery.js" type="text/javascript"></script>
-    <script src="/catalog/view/theme/zemez894/js/zemez_single_category/bootstrap-tabcollapse.js" type="text/javascript"></script>
+    <script src="/catalog/view/theme/zemez894/js/zemez_single_category/bootstrap-tabcollapse1.js" type="text/javascript"></script>
 
 
     <script src="/js/react_init/react.production.min.js" crossorigin></script>

@@ -42,6 +42,39 @@ export class CatalogList extends React.Component {
         }
       )
     window.addEventListener('scroll', this.handleScroll.bind(this));
+
+    const script = document.createElement("script");
+    script.src = "/js/superfish.js";
+    script.async = true;
+    document.body.appendChild(script);
+
+    const script2 = document.createElement("script");
+    script2.src = "/js/sfmenu.js";
+    script2.async = true;
+    document.body.appendChild(script2);
+
+    const script3 = document.createElement("script");
+    script3.src = "/js/jquery.rd-navbar.js";
+    script3.async = true;
+    document.body.appendChild(script3);
+
+ 
+  }
+  componentDidUpdate(prevProps) {
+    const script = document.createElement("script");
+    script.src = "/js/superfish.js";
+    script.async = true;
+    document.body.appendChild(script);
+
+    const script2 = document.createElement("script");
+    script2.src = "/js/sfmenu.js";
+    script2.async = true;
+    document.body.appendChild(script2);
+
+    const script3 = document.createElement("script");
+    script3.src = "/js/jquery.rd-navbar.js";
+    script3.async = true;
+    document.body.appendChild(script3);
   }
 
   ProductLists(c, p) {
@@ -199,7 +232,7 @@ export class CatalogList extends React.Component {
     item.children.forEach(element => {
       if (element.children != null) {
         LIST.push(<li className="sf-with-mega">
-          <a href="#" className="sf-with-url"><span>{element.name}</span></a>
+          <a href="#"><span>{element.name}</span></a>
           <ul className="sf-mega" style={{ backgroundImage: "url(/img/menu-bg-887x420.jpg)" }}>
             <li className="sf-mega_row">
               <div className="sf-mega_section">
@@ -245,7 +278,7 @@ export class CatalogList extends React.Component {
               <div className="box megamenu">
 
 
-                <ul className={`sf-menu sf-js-enabled sf-arrows ${Math.random()}`}>
+                <ul className="sf-menu">
 
                   {items.map(item => (
                     this.createLi(item)
@@ -282,11 +315,11 @@ export class CatalogList extends React.Component {
               </div>
             </div>
           </div>
-          <Helmet>
-          <script src={`/js/superfish.js?${Math.random()}`} type="text/javascript"></script>
-          <script src={`/js/sfmenu.js?${Math.random()}`} type="text/javascript" />
-          <script src={`/js/jquery.rd-navbar.js?${Math.random()}`} type="text/javascript"></script>
-          </Helmet>
+          {/*<Helmet>
+          <script src="/js/superfish.js" type="text/javascript"></script>
+          <script src="/js/sfmenu.js"type="text/javascript" />
+          <script src="/js/jquery.rd-navbar.js" type="text/javascript"></script>
+          </Helmet>*/}
         </div>
       );
     }

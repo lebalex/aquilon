@@ -283,6 +283,7 @@ export class CatalogList extends React.Component {
             </div>
           </div>
           <Helmet>
+          <script src="/js/superfish.js" type="text/javascript"></script>
           <script src="/js/sfmenu.js" type="text/javascript" />
           <script src="/js/jquery.rd-navbar.js" type="text/javascript"></script>
           </Helmet>

@@ -284,7 +284,7 @@ export class CatalogList extends React.Component {
           </div>
           <Helmet>
           <script src="/js/sfmenu.js" type="text/javascript" />
-
+          <script src="/js/jquery.rd-navbar.js" type="text/javascript"></script>
           </Helmet>
         </div>
       );

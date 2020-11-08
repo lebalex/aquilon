@@ -232,7 +232,7 @@ export class CatalogList extends React.Component {
     item.children.forEach(element => {
       if (element.children != null) {
         LIST.push(<li className="sf-with-mega">
-          <a href="#"><span>{element.name}</span></a>
+          <a href="#" className="sf-with-ul2"><span>{element.name}</span></a>
           <ul className="sf-mega" style={{ backgroundImage: "url(/img/menu-bg-887x420.jpg)" }}>
             <li className="sf-mega_row">
               <div className="sf-mega_section">

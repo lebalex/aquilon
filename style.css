@@ -16,4 +16,17 @@
             visibility: visible; }
     
 
-           
+            aside .sf-menu > li > .sf-with-ul2:before, .col-lg-3 .sf-menu > li > .sf-with-ul:before {
+              content: '\e315';
+              position: absolute;
+              right: 22px;
+              top: 50%;
+              line-height: 0;
+              font-size: 19px;
+              font-weight: 400;
+              font-family: "Material Icons";
+              color: #98d648;
+            }
+            .sf-menu ul > li > .sf-with-ul2 {
+              position: relative;
+            }

@@ -46,10 +46,10 @@ sec_session_start();
     <script src="/catalog/view/javascript/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
 
     <!--script src="/catalog/view/theme/zemez894/js/zemez_megamenu/superfish.min.js" type="text/javascript"></script-->
-    <!--script src="/js/superfish.js" type="text/javascript"></script-->
+    <script src="/js/superfish.js" type="text/javascript"></script>
 
     <!--script src="/catalog/view/theme/zemez894/js/zemez_megamenu/jquery.rd-navbar.min.js" type="text/javascript"></script-->
-    <!--script src="/js/jquery.rd-navbar.js" type="text/javascript"></script-->
+    <script src="/js/jquery.rd-navbar.js" type="text/javascript"></script>
     
     
     

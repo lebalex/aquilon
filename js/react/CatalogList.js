@@ -43,7 +43,7 @@ export class CatalogList extends React.Component {
       )
     window.addEventListener('scroll', this.handleScroll.bind(this));
 
-    const script = document.createElement("script");
+    /*const script = document.createElement("script");
     script.src = "/js/superfish.js";
     script.async = true;
     document.body.appendChild(script);
@@ -56,11 +56,11 @@ export class CatalogList extends React.Component {
     const script3 = document.createElement("script");
     script3.src = "/js/jquery.rd-navbar.js";
     script3.async = true;
-    document.body.appendChild(script3);
+    document.body.appendChild(script3);*/
 
  
   }
-  componentDidUpdate(prevProps) {
+  /*componentDidUpdate(prevProps) {
     const script = document.createElement("script");
     script.src = "/js/superfish.js";
     script.async = true;
@@ -75,7 +75,7 @@ export class CatalogList extends React.Component {
     script3.src = "/js/jquery.rd-navbar.js";
     script3.async = true;
     document.body.appendChild(script3);
-  }
+  }*/
 
   ProductLists(c, p) {
     //console.log(c, p)
@@ -255,9 +255,9 @@ export class CatalogList extends React.Component {
 
     if (error) {
       return <div>Ошибка: {error.message}</div>;
-    } else if (!isLoadedP) {
+    } /*else if (!isLoadedP) {
       return <div className="row">Загрузка...</div>
-    } else if (this.state.product_id != -1) {
+    }*/ else if (this.state.product_id != -1) {
       return <div className="row">
         {
           <ProductDetail items={itemsProduct[0]} id_categ={itemsProduct[0].id_categ} categ_name={this.getCategName(itemsProduct[0].id_categ)} />
@@ -315,11 +315,9 @@ export class CatalogList extends React.Component {
               </div>
             </div>
           </div>
-          {/*<Helmet>
-          <script src="/js/superfish.js" type="text/javascript"></script>
+          <Helmet>
           <script src="/js/sfmenu.js"type="text/javascript" />
-          <script src="/js/jquery.rd-navbar.js" type="text/javascript"></script>
-          </Helmet>*/}
+          </Helmet>
         </div>
       );
     }

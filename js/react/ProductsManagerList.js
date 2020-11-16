@@ -392,16 +392,15 @@ $("#file_val").val('');
     } else {
       return (
         <div>
-          <div class="row">
-            <div className="col-12">
+          <div class="row col-sm-12">
               <div class="custom-control custom-checkbox">
                 <input type="checkbox" className="custom-control-input" id="customShowDeleted" checked={this.state.showDeleted}
                   onChange={(e) => this.onShowDeleted(e)} />
                 <label className="custom-control-label" htmlFor="customShowDeleted">Показать удаленный товар</label>
               </div>
-            </div>
 
-            <div id="search" class="search2 pull-left">
+
+            <div id="search" class="search2 pull-left ">
                 <input class="search2" name="search" placeholder="поиск по наименованию" style={{ width: '300px;' }} value={this.state.search_string}
                   onChange={(e) => this.changeSearch(e)} onKeyPress={event => this.onEnterPress(event)} />
                 <button type="button" className="button-search" onClick={() => this.searchClear()}><i class="fa fa-times"></i></button>
@@ -413,14 +412,14 @@ $("#file_val").val('');
  </div>
  
 
-          <div className="row">
+          <div className="row col-sm-12">
             <button onClick={() => this.editCateg(-1,'')} className="btn edit-btn" data-toggle="modal" data-target=".bd-edit-modal-categ-lg">
               <i className="icon-plus" />добавить категорию</button>&nbsp;
               <button onClick={() => this.edit(-1)} className="btn edit-btn" data-toggle="modal" data-target=".bd-edit-modal-lg">
               <i className="icon-plus" />добавить товар</button>
           </div>
 
-          <div className="row">
+          <div className="row col-sm-12">
             <ul className="breadcrumb">
               <li><a href="#" onClick={() => this.loadCategBack(0, -1)}><i className="fa fa-home"></i></a></li>
               {this.state.categ_selected.map((item, index) => (
@@ -432,7 +431,7 @@ $("#file_val").val('');
           </div>
 
 
-          {(items.length > 0) ? <table className="table" >
+          {(items.length > 0) ? <table className="table col-sm-12" >
             <thead>
               <tr>
                 <th scope="col" className="border-top-0 border-right border-bottom-0">Название</th>

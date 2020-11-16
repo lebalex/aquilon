@@ -192,7 +192,7 @@ changeSearch(e)
     } else if(order_id==-1) {
       return (
 
-<div className="row section-heading">
+<div className="row section-heading col-sm-12">
 
 <div id="search" class="search2 pull-left">
                 <input class="search2" name="search" placeholder="поиск по номеру"   value={this.state.order_id_search}
@@ -203,7 +203,7 @@ changeSearch(e)
 
                      
 
-<table className="table table-hover" >
+<table className="table table-hover col-sm-12" >
   <thead>
     <tr>
       <th width="100px" scope="col" className="border-top-0 border-right border-bottom-0">№</th>
@@ -236,7 +236,7 @@ changeSearch(e)
       return (
         <div>
 
-<div className="row section-heading">
+<div className="row section-heading  col-sm-12">
 
 <div className="col-12 mb-3">
                             <label htmlFor="first_name"><h4>Заказ №{this.state.order_id}</h4></label>

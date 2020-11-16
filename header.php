@@ -134,8 +134,10 @@ sec_session_start();
                                                 </a>
                                             </span>
                                             <div id="search" class="search pull-right">
+                                            <form action="/search" method="post">
                                                 <input type="text" name="search" value="" placeholder="поиск по наименованию">
-                                                <button type="button" class="button-search">Поиск</button>
+                                                <button type="submit" class="button-search">Поиск</button>
+                                            </form>
                                             </div>
                                         </div>
                                     </div>

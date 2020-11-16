@@ -21,6 +21,7 @@ module.exports = {
       OrdersUserList: './js/react/OrdersUserList.js',
       UsersManagerList: './js/react/UsersManagerList.js',
       FavorList: './js/react/FavorList.js',
+      SearchProduct: './js/react/SearchProduct.js',
 
       /*
 
@@ -35,7 +36,7 @@ module.exports = {
       
 
 
-      SearchProduct: './js/react/SearchProduct.js',
+      
       Test: './js/react/Test.js',
       */
 

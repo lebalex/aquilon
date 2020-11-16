@@ -109,17 +109,10 @@ export class FavorList extends React.Component {
     } else {
       return (
         <div id="product-category" className="container">
-
-
-
           <div className="row">
           <aside id="column-left">
-
-
             </aside>
-
             <div id="content" className="col-sm-11">
-
               <div className="product-filter clearfix">
                 <div className="product-filter_elem">
                   <div className="button-view">
@@ -127,7 +120,6 @@ export class FavorList extends React.Component {
                     <button type="button" id="list-view" onClick={() => this.listView()} className={!this.state.gridView ? 'active' : ''} title="Список"><i className="material-icons-storage"></i></button>
                   </div>
                 </div>
-
               </div>
               {/** товары*/}
               <div className="row">
@@ -135,9 +127,7 @@ export class FavorList extends React.Component {
                 {itemsProduct.map(item => (
                   <ProductOne style={this.state.style} key={item.id} items={item} url={`/catalog/${item.id_categ}/${item.id}`} />
                 ))}
-
-
-
+                {this.EmptyFavor()}
               </div>
             </div>
           </div>

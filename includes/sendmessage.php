@@ -16,7 +16,7 @@ function sendMessage($subject, $message, $email_client, $only_client)
     $mail->isSMTP();
     //$mail->SMTPDebug =2;
     //$mail->Debugoutput= 'html';                                  // Set mailer to use SMTP
-    $mail->Host       = 'mail.dsgkomplekt.ru';  // Specify main and backup SMTP servers
+    $mail->Host       = 'mail.lebalex.xyz';  // Specify main and backup SMTP servers
     //$mail->SMTPAuth   = true;                                   // Enable SMTP authentication
     //$mail->Username   = '@gmail.com';                     // SMTP username
     //$mail->Password   = '';                               // SMTP password
@@ -24,7 +24,7 @@ function sendMessage($subject, $message, $email_client, $only_client)
     $mail->Port       = 25;                                    // TCP port to connect to
 
     $mail->CharSet = 'utf-8';
-    $mail->setFrom("noreplay@dsgkomplekt.ru", 'Сообщение с сайта DSG Комплект');
+    $mail->setFrom("noreplay@lebalex.xyz", 'Сообщение с сайта Аквилон');
     if ($only_client == 0) {
       $mail->addAddress(DEFAULT_EMAIL);
       $mail->addAddress('lebalex@mail.ru');

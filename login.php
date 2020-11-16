@@ -14,7 +14,7 @@ include_once 'header.php';
             <h2>Новый покупатель</h2>
             <p><strong>Регистрация</strong></p>
             <p>Зарегистрировавшись на сайте Вы сможете просматривать свои заказы, выполнять покупки быстрее, получить персональную скидку.</p>
-            <a href="/register" class="btn btn-primary">Продолжить</a></div>
+            <a href="/registration" class="btn btn-primary">Продолжить</a></div>
         </div>
         <div class="col-sm-6">
           <div class="well">
@@ -28,7 +28,7 @@ include_once 'header.php';
               <div class="form-group">
                 <label class="control-label" for="input-password">Пароль</label>
                 <input type="password" name="password" value="" placeholder="пароль" id="input-password" class="form-control" />
-                <a href="https://livedemo00-opencart.template-help.com/opencart_prod-23526/index.php?route=account/forgotten">Забыли пароль</a></div>
+                <a href="/restore_password">Забыли пароль</a></div>
               <input type="submit" value="Вход" class="btn btn-primary" />
                           </form>
           </div>

@@ -9,24 +9,32 @@ module.exports = {
       CatalogList: './js/react/CatalogList.js',
       ProductDetail: './js/react/ProductDetail.js',
       ProductOne: './js/react/ProductOne.js',
+      ProductsManagerList: './js/react/ProductsManagerList.js',
+      CartList: './js/react/CartList.js',
+      CheckOut: './js/react/CheckOut.js',
+      Registration: './js/react/Registration.js',
+      OrdersManagerList: './js/react/OrdersManagerList.js',
+      OrdersUserList: './js/react/OrdersUserList.js',
+      RestorePwd: './js/react/RestorePwd.js',
+      ChangePwd: './js/react/ChangePwd.js',
 
-      /*AccountUsers: './js/jsclasses/AccountUsers.js',
-      CartList: './js/jsclasses/CartList.js',
-      CategList: './js/jsclasses/CategList.js',
-      CategListSimple: './js/jsclasses/CategListSimple.js',
-      CategManagerList: './js/jsclasses/CategManagerList.js',
-      ChangePwd: './js/jsclasses/ChangePwd.js',
-      CheckOut: './js/jsclasses/CheckOut.js',
-      FavorList: './js/jsclasses/FavorList.js',
-      ModalYesNo: './js/jsclasses/ModalYesNo.js',
-      OrdersManagerList: './js/jsclasses/OrdersManagerList.js',
-      OrdersUserList: './js/jsclasses/OrdersUserList.js',
-      ProductsManagerList: './js/jsclasses/ProductsManagerList.js',
-      RestorePwd: './js/jsclasses/RestorePwd.js',
-      UsersManagerList: './js/jsclasses/UsersManagerList.js',
-      SearchProduct: './js/jsclasses/SearchProduct.js',
-      Test: './js/jsclasses/Test.js',
-      Registration: './js/jsclasses/Registration.js',*/
+      /*AccountUsers: './js/react/AccountUsers.js',
+
+      CategList: './js/react/CategList.js',
+      CategListSimple: './js/react/CategListSimple.js',
+      CategManagerList: './js/react/CategManagerList.js',
+      
+
+      FavorList: './js/react/FavorList.js',
+      ModalYesNo: './js/react/ModalYesNo.js',
+      OrdersManagerList: './js/react/OrdersManagerList.js',
+      OrdersUserList: './js/react/OrdersUserList.js',
+      
+      RestorePwd: './js/react/RestorePwd.js',
+      UsersManagerList: './js/react/UsersManagerList.js',
+      SearchProduct: './js/react/SearchProduct.js',
+      Test: './js/react/Test.js',
+      */
 
 
       },

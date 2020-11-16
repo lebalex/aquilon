@@ -1,10 +1,10 @@
 <?php
-include_once 'includes/functions.php';
+include_once '../includes/functions.php';
 sec_session_start();
 
-
-
+include_once 'auth.php';
 ?>
+
 
 <!DOCTYPE html>
 <!--[if IE]><![endif]-->
@@ -19,7 +19,7 @@ sec_session_start();
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Аквилон</title>
+    <title>Аквилон - Управление</title>
 
 
     <meta name="description" content="Аквилон" />
@@ -34,6 +34,8 @@ sec_session_start();
     <link href="/catalog/view/javascript/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen" />
     <link href="/catalog/view/theme/zemez894/stylesheet/photoswipe.css" rel="stylesheet">
     <link href="/catalog/view/theme/zemez894/stylesheet/stylesheet.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/fontello.css">
+
 
     <link href="/catalog/view/theme/zemez894/js/fancybox/jquery.fancybox.css" rel="stylesheet">
     <link href="/catalog/view/theme/zemez894/stylesheet/homebuilder.css" type="text/css" rel="stylesheet" media="screen" />
@@ -45,10 +47,9 @@ sec_session_start();
     <script src="/catalog/view/javascript/jquery/jquery-2.1.1.min.js" type="text/javascript"></script>
     <script src="/catalog/view/javascript/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
 
-    <!--script src="/catalog/view/theme/zemez894/js/zemez_megamenu/superfish.min.js" type="text/javascript"></script-->
+
     <script src="/js/superfish.js" type="text/javascript"></script>
 
-    <!--script src="/catalog/view/theme/zemez894/js/zemez_megamenu/jquery.rd-navbar.min.js" type="text/javascript"></script-->
     <script src="/js/jquery.rd-navbar.js" type="text/javascript"></script>
     
     
@@ -61,7 +62,7 @@ sec_session_start();
     <script src="/js/react_init/react.production.min.js" crossorigin></script>
     <script src="/js/react_init/react-dom.production.min.js" crossorigin></script>
     <link href="/style.css" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="/css/fontello.css">
+    
 
 
 </head>
@@ -115,28 +116,7 @@ sec_session_start();
                                                 </a>
 
                                             </h1>
-                                            <span class="header-wishlist pull-right">
 
-                                                <a href="/cart">
-                                                    <i class="material-icons-local_grocery_store"></i>
-                                                    <strong>Корзина</strong><br>
-                                                    <span id="cart-total3" class="cart-total2"><?= getCartDataCount() ?></span>
-                                                </a>
-
-
-                                            </span>
-
-                                            <span class="header-wishlist pull-right">
-                                                <a href="/favor">
-                                                    <i class="material-icons-favorite_border"></i>
-                                                    <strong>Избранное</strong><br>
-                                                    <span id="wishlist-total3"><?= getFavouritetDataCount() ?></span>
-                                                </a>
-                                            </span>
-                                            <div id="search" class="search pull-right">
-                                                <input type="text" name="search" value="" placeholder="поиск по наименованию">
-                                                <button type="button" class="button-search">Поиск</button>
-                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -153,11 +133,9 @@ sec_session_start();
                                             <nav id="top-links" class="nav toggle-wrap pull-left">
                                                 <a class="toggle material-icons-person_outline" href="#"></a>
                                                 <ul class="toggle_cont">
-                                                    <li><a href="/about">О нас</a></li>
-                                                    <li><a href="/">Каталог</a></li>
-                                                    <li><a href="/sale">Оплата и доставка</a></li>
-                                                    <li><a href="/contact">Контакты</a></li>
-                                                    <li class="pull-right"><a href="/login"><i class="material-icons-vpn_key"></i><span>Вход</span></a></li>
+                                                    <li><a href="/manager/">Группы и Товары</a></li>
+                                                    <li><a href="/manager/orders">Заказы</a></li>
+                                                    <li><a href="/manager/users">Клиенты</a></li>
 
                                                 </ul>
                                             </nav>

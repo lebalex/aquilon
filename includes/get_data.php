@@ -44,6 +44,26 @@ if ($obj == "get_categ") {
 
     //echo json_encode(getCatalogsName(false));
 }
+else if ($obj == "get_categ_parent") {
+    $categ_predicat=" and parent_id=0";
+    if($categ_id!='-1') $categ_predicat=" and parent_id=".$categ_id;
+
+    $showDeleted = getParam('deleted', 'false');
+    $active='(1)';
+    if($showDeleted=='true') $active='(0,1)';
+
+    $back = getParam('back', 0);
+
+    if($back==1) $categ_predicat=" and parent_id IN (select parent_id from aquilon_categ where active in  ".$active." and id=".$categ_id.")";
+   
+    
+    $stmt = $mysqli->prepare("select id, parent_id, name, img, active from aquilon_categ where active in ".$active.$categ_predicat." order by id");
+    $stmt->execute();
+    $result = $stmt->get_result();
+    $arr = $result->fetch_all(MYSQLI_ASSOC);
+
+    echo json_encode($arr);
+}
 /*else if ($obj == "get_categ_db") {
     echo json_encode(getCatalogsName(true));
 }*/
@@ -135,11 +155,11 @@ else if($obj =="get_all_products_db")
     if($categ_id!='-1') $categ_predicat=" and id_categ=".$categ_id;
 
     $showDeleted = getParam('deleted', 'false');
-    $active='1';
-    if($showDeleted=='true') $active='0';
+    $active='(1)';
+    if($showDeleted=='true') $active='(0,1)';
 
 
-    $stmt = $mysqli->prepare("select  id_categ, id, name, img, coast, count, art, description from aquilon_products where active= ".$active.$categ_predicat);
+    $stmt = $mysqli->prepare("select  id_categ, id, name, img, coast, count, art, description, active from aquilon_products where active in ".$active.$categ_predicat);
     
         $stmt->execute();
         $result = $stmt->get_result();

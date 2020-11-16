@@ -14,13 +14,13 @@
                     <tbody>
                         <tr>
                             <td>
-                                <div style="padding-top: 10px;padding-bottom: 10px;">Ваш заказ в DSG Комплект</div>
+                                <div style="padding-top: 10px;padding-bottom: 10px;">Ваш заказ в Аквилон</div>
                             </td>
                         </tr>
                         <tr>
                             <td>
                                 <h3>
-                                    <a href="https://www.dsgkomplekt.ru"><img src="https://www.dsgkomplekt.ru/img/core-img/logo_dsg.png" /></a>
+                                <a href="https://www.aquilon.ru">Аквилон</a>
                                 </h3>
                             </td>
                         </tr>
@@ -62,7 +62,7 @@
                                     <table border="1" cellspacing="0" cellpadding="10">
                                         <tr>
                                             <th style="text-align: left;">Наименование</th>
-                                            <th style="text-align: left;">OEM</th>
+                                            <th style="text-align: left;">Арт</th>
                                             <th style="text-align: left;">Кол-во</th>
                                             <th style="text-align: left;">Цена</th>
                                         </tr>
@@ -70,7 +70,7 @@
                                         foreach ($items as $item) : ?>
                                             <tr>
                                                 <td><?= $item->name ?></td>
-                                                <td><?= $item->oem ?></td>
+                                                <td><?= $item->art ?></td>
                                                 <td><?= $item->count ?></td>
                                                 <td><?= $item->coast ?></td>
                                             </tr>
@@ -80,7 +80,7 @@
                                         <?php foreach ($items_array as $item) : ?>
                                             <tr>
                                                 <td><?= $item['name'] ?></td>
-                                                <td><?= $item['oem'] ?></td>
+                                                <td><?= $item['art'] ?></td>
                                                 <td><?= $item['count'] ?></td>
                                                 <td><?= $item['coast'] ?></td>
                                             </tr>
@@ -99,16 +99,15 @@
                         <tr>
                             <td>
                             <div style="padding-top: 10px;">
-                                    <h5>+7(3952)768-765</h5>
-                                    <h5>+7(901)65 88 765</h5>
-                                    <h5><a href="mailto:dsgkomplekt@mail.ru">dsgkomplekt@mail.ru</a></h5>
+                                    <h5>+7-950-105-13-50</h5>
+                                    <h5><a href="mailto:aquilon2015@mail.ru">aquilon2015@mail.ru</a></h5>
                                 </div>
                             </td>
                         </tr>
                         <tr>
                             <td>
                                 <div style="padding-top: 10px; padding-bottom: 40px;">
-                                    С уважением, сотрудники DSG Комплект
+                                    С уважением, сотрудники Аквилон
                                 </div>
                             </td>
                         </tr>

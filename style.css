@@ -1,3 +1,10 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700|Ubuntu:300,400,500,700");
+/* :: 2.0 Import All CSS */
+
+@import url(/css/font-awesome.min.css);
+/* :: 3.0 Common/Base CSS */
+
+
 .image .hover-img {
       -webkit-transition-duration: 500ms;
       transition-duration: 500ms;
@@ -30,3 +37,146 @@
             .sf-menu ul > li > .sf-with-ul2 {
               position: relative;
             }
+
+            .search2 {
+              margin-left: -4px;
+              position: relative;
+              padding: 8px;
+              border-top-left-radius: 3px;
+              border-top-right-radius: 3px;
+            }
+            .search2 input[type="text"] {
+              color: #333;
+              display: block;
+              margin: 0;
+              font-size: 15px;
+              line-height: 24px;
+              font-weight: 400;
+              width: 503px;
+              height: 45px;
+              padding: 11.5px 120px 11.5px 20px;
+              background: #fff;
+              border: 2px solid #98d648;
+              -webkit-border-radius: 3px;
+              -moz-border-radius: 3px;
+              border-radius: 3px;
+              -moz-box-sizing: border-box;
+              -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+            }
+            .search2 input[type="text"]:focus {
+              outline: none;
+              -webkit-box-shadow: 1px 1px 8px rgba(51, 51, 51, 0.25);
+              -moz-box-shadow: 1px 1px 8px rgba(51, 51, 51, 0.25);
+              box-shadow: 1px 1px 8px rgba(51, 51, 51, 0.25);
+            }
+            .search2 input[type="text"]::-webkit-input-placeholder {
+              color: #333;
+              opacity: 1;
+            }
+            .search2 input[type="text"]:-moz-placeholder {
+              color: #333;
+              opacity: 1;
+            }
+            .search2 input[type="text"]::-moz-placeholder {
+              color: #333;
+              opacity: 1;
+            }
+            .search2 input[type="text"]:-ms-input-placeholder {
+              color: #333;
+              opacity: 1;
+            }
+            .search2 button, .search2 button:focus, .search2 button:active {
+              background: none;
+              border: none;
+              display: inline-block;
+              padding: 0;
+              outline: none;
+              outline-offset: 0;
+              cursor: pointer;
+              -webkit-appearance: none;
+              /*position: absolute;*/
+              top: 8px;
+              bottom: 8px;
+              right: 8px;
+              color: #fff;
+              font-size: 15px;
+              padding: 0 28px 0 30px;
+              margin-left: 3px;
+              line-height: 45px;
+              background: #98d648;
+              text-transform: uppercase;
+              font-weight: 700;
+              border-top-right-radius: 3px;
+              border-bottom-right-radius: 3px;
+            }
+            .search2 button::-moz-focus-inner, .search2 button:focus::-moz-focus-inner, .search2 button:active::-moz-focus-inner {
+              border: none;
+              padding: 0;
+            }
+            @media (min-width: 768px) {
+              .search2 button, .search2 button:focus, .search2 button:active {
+                -moz-transition: 0.5s all ease;
+                -o-transition: 0.5s all ease;
+                -webkit-transition: 0.5s all ease;
+                transition: 0.5s all ease;
+              }
+            }
+            .search2 button:hover, .search2 button:focus:hover, .search2 button:active:hover {
+              color: #fff;
+              background: #333;
+            }
+            
+            @media (max-width: 1199px) {
+              .search2 input[type="text"] {
+                width: 285px;
+              }
+            }
+
+            .edit-btn-search-icon {
+              display: inline-block;
+              min-width: 40px;
+              height: 40px;
+              color: #ffffff;
+              border: none;
+              border-radius: 2;
+              padding: 0 10px;
+              margin-right: 10px;
+              font-size: 12px;
+              background-color: #4685d4;
+              font-weight: 100; }
+          
+          .edit-btn-icon {
+              display: inline-block;
+              min-width: 40px;
+              height: 30px;
+              color: #ffffff;
+              border: none;
+              border-radius: 2;
+              padding: 0 10px;
+              margin-right: 10px;
+              font-size: 12px;
+              background-color: #4685d4;
+              font-weight: 100; }
+              .edit-btn-icon-red {
+                  display: inline-block;
+                  min-width: 40px;
+                  height: 30px;
+                  color: #ffffff;
+                  border: none;
+                  border-radius: 2;
+                  padding: 0 10px;
+                  margin-right: 10px;
+                  font-size: 12px;
+                  background-color: #d44646;
+                  font-weight: 100; }
+.essence-btn {
+  
+  background-color: #98d648;
+}
+.mt-15
+{
+  margin-top: 15px;
+}
+
+          

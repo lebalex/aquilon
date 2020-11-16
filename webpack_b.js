@@ -17,21 +17,24 @@ module.exports = {
       OrdersUserList: './js/react/OrdersUserList.js',
       RestorePwd: './js/react/RestorePwd.js',
       ChangePwd: './js/react/ChangePwd.js',
+      AccountUsers: './js/react/AccountUsers.js',
+      OrdersUserList: './js/react/OrdersUserList.js',
+      UsersManagerList: './js/react/UsersManagerList.js',
+      FavorList: './js/react/FavorList.js',
 
-      /*AccountUsers: './js/react/AccountUsers.js',
+      /*
 
       CategList: './js/react/CategList.js',
       CategListSimple: './js/react/CategListSimple.js',
       CategManagerList: './js/react/CategManagerList.js',
       
 
-      FavorList: './js/react/FavorList.js',
-      ModalYesNo: './js/react/ModalYesNo.js',
-      OrdersManagerList: './js/react/OrdersManagerList.js',
-      OrdersUserList: './js/react/OrdersUserList.js',
       
-      RestorePwd: './js/react/RestorePwd.js',
-      UsersManagerList: './js/react/UsersManagerList.js',
+      ModalYesNo: './js/react/ModalYesNo.js',
+
+      
+
+
       SearchProduct: './js/react/SearchProduct.js',
       Test: './js/react/Test.js',
       */

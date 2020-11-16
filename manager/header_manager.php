@@ -136,6 +136,7 @@ include_once 'auth.php';
                                                     <li><a href="/manager/">Группы и Товары</a></li>
                                                     <li><a href="/manager/orders">Заказы</a></li>
                                                     <li><a href="/manager/users">Клиенты</a></li>
+                                                    <li class="pull-right"><a href="/logout"><i class="material-icons-exit_to_app"></i><span>Выход</span></a></li>
 
                                                 </ul>
                                             </nav>

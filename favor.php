@@ -7,15 +7,12 @@ include_once 'header.php';
         <li><a href="/favor">Избранное</a></li>
       </ul>
       <div class="row">
-                <div id="content" class="col-sm-12">
-      <div class="row">
+                <div id="data_page" class="col-sm-12">
 
-
-      </div>
       </div>
     </div>
 </div>
-
+<script src="/js/jsmin/FavorList.js"></script>
 <?php
 include_once 'footer.php';
 ?>

@@ -9,9 +9,9 @@ use \Firebase\JWT\JWT;
 date_default_timezone_set('Europe/Moscow');
  
 // переменные, используемые для JWT 
-$key = "cfqnLkzLheptq";
-$iss = "https://www.dsgkomplekt.ru";
-$aud = "https://www.dsgkomplekt.ru";
+$key = "cfqnFrdbkjy";
+$iss = "https://www.aquilon.ru";
+$aud = "https://www.aquilon.ru";
 
 
 include_once 'functions.php';

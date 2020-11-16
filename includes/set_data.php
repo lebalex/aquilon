@@ -518,7 +518,7 @@ if ($obj == 'registration') {
     $captcha_action = htmlspecialchars(strip_tags(getParam('action', '')));
     $result = ['code' => 0, 'error' => ''];
 
-
+/*
     $url = 'https://www.google.com/recaptcha/api/siteverify';
     $params = [
         'secret' => '6LfIitEZAAAAAMx_Ioc_aPqwW3roI6VNtNn42dzS',
@@ -536,9 +536,10 @@ if ($obj == 'registration') {
     $response = curl_exec($ch);
     if (!empty($response)) $decoded_response = json_decode($response);
 
-    $success = false;
+    $success = false;*/
 
-    if ($decoded_response && $decoded_response->success && $decoded_response->action == $captcha_action && $decoded_response->score > 0) {
+   // if ($decoded_response && $decoded_response->success && $decoded_response->action == $captcha_action && $decoded_response->score > 0) {
+    if (true) {
 
 
         if ($stmt = $mysqli->prepare("SELECT id FROM aquilon_users WHERE registr=1 and email = ? LIMIT 1")) {

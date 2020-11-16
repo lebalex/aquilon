@@ -141,16 +141,15 @@ export class UsersManagerList extends React.Component {
 
 
                         </div>
-                        <div className="product-sorting d-flex">
-                            <input type="search" name="search" value={this.state.search_user} className="form-control" id="headerSearch" 
-                            style={{width:'300px'}} placeholder="поиск по ФИО и email" onChange={(e)=> this.changeSearch(e)}
-                            onKeyPress={event => this.onEnterPress(event)}/>
-                            <button className="btn bg-transparent" style={{marginLeft:'-40px', zIndex: '100'}}  onClick={() => this.searchClear()}>
-      <i className="fa fa-times"></i>
-    </button>
-                            <button className="btn edit-btn-search-icon" onClick={()=> this.loadData(this.state.search_user)}><i className="fa fa-search" aria-hidden="true"></i></button>
-                            
-                        </div>
+
+                        <div id="search" class="search2 pull-left">
+                <input class="search2" name="search" placeholder="поиск по ФИО и email"   value={this.state.search_user}
+                  onChange={(e) => this.changeSearch(e)} onKeyPress={event => this.onEnterPress(event)} />
+                <button type="button" className="button-search" onClick={() => this.searchClear()}><i class="fa fa-times"></i></button>
+                <button type="button" className="button-search" onClick={() => this.loadData(this.state.search_user)}><i className="fa fa-search" aria-hidden="true"></i></button>
+              </div>
+
+
                     </div>
                 </div>
 

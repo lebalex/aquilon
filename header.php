@@ -157,7 +157,21 @@ sec_session_start();
                                                     <li><a href="/">Каталог</a></li>
                                                     <li><a href="/sale">Оплата и доставка</a></li>
                                                     <li><a href="/contact">Контакты</a></li>
-                                                    <li class="pull-right"><a href="/login"><i class="material-icons-vpn_key"></i><span>Вход</span></a></li>
+
+                <!-- User Login Info -->
+                <?php
+                $user = getUserLoginOrForm();
+                if ($user==null):?>
+                    <li class="pull-right"><a href="/login"><i class="material-icons-vpn_key"></i><span>Вход</span></a></li>
+                <?php else: ?>
+                    <li class="pull-right"><a href="/logout"><i class="material-icons-exit_to_app"></i><span>Выход</span></a></li>
+                    <li class="pull-right"><a href="/users/account"><i class="material-icons-vpn_key"></i><span><?=$user; ?></span></a></li>
+
+                <?php endif; ?>
+
+                
+
+                                       
 
                                                 </ul>
                                             </nav>
@@ -172,5 +186,5 @@ sec_session_start();
 
             </div>
         </div>
-
+        <script type="text/javascript" src="/js/header.js"></script>
     </header>

@@ -72,21 +72,21 @@ export class ChangePwd extends React.Component {
     render() {
 
         if (this.state.changeOk) {
-            return (<div className="row">
-
-                <div className="col-12 col-md-4 col-lg-12">
-                    <div className="shop_grid_product_area">
-                        <div className="messages">
-                            <div className="error_form2">
-                                <p>Вы успешно поменяли пароль.</p>
-                            </div>
-                            <div className="error_form2">
+            return (
+            
+                <div className="row">
+                <div className="col-12 col-sm-6 col-md-6">
+                    <div className="col-12 mb-3">
+                        <div class="col-10 ml-15">
+                                <h4>Вы успешно поменяли пароль.</h4>
+                                <p>
                                 <a href='/'>Перейти в каталог</a>
-                            </div>
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
+
             );
         } else {
             return (

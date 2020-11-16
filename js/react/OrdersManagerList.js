@@ -193,13 +193,15 @@ changeSearch(e)
       return (
 
 <div className="row section-heading">
-<input type="search" name="search" id="headerSearch" value={this.state.order_id_search} className="col-2 form-control" placeholder="поиск по номеру" 
-onChange={(e) => this.changeSearch(e)} onKeyPress={event => this.onEnterPress(event)}/>
-<button className="btn bg-transparent" style={{marginLeft:'-40px', zIndex: '100'}}  onClick={() => this.searchClear()}>
-      <i className="fa fa-times"></i>
-    </button>
-<button className="btn edit-btn-search-icon" onClick={() => this.loadDataS()}><i className="fa fa-search" aria-hidden="true"></i></button>
-                        
+
+<div id="search" class="search2 pull-left">
+                <input class="search2" name="search" placeholder="поиск по номеру"   value={this.state.order_id_search}
+                  onChange={(e) => this.changeSearch(e)} onKeyPress={event => this.onEnterPress(event)} />
+                <button type="button" className="button-search" onClick={() => this.searchClear()}><i class="fa fa-times"></i></button>
+                <button type="button" className="button-search" onClick={() => this.loadDataS()}><i className="fa fa-search" aria-hidden="true"></i></button>
+              </div>
+
+                     
 
 <table className="table table-hover" >
   <thead>

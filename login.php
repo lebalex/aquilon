@@ -20,14 +20,14 @@ include_once 'header.php';
           <div class="well">
             <h2>Вход для покупателей</h2>
             <p><strong>Я постоянный покупатель</strong></p>
-            <form action="/login" method="post" enctype="multipart/form-data">
+            <form id="loginform" name="loginform" action="/includes/process_login.php" method="post" enctype="multipart/form-data">
               <div class="form-group">
-                <label class="control-label" for="input-email">E-Mail адрес</label>
-                <input type="text" name="email" value="" placeholder="E-Mail адрес" id="input-email" class="form-control" />
+                <label class="control-label" for="login">E-Mail адрес</label>
+                <input type="text" name="login" value="" placeholder="E-Mail адрес" id="login" class="form-control" />
               </div>
               <div class="form-group">
-                <label class="control-label" for="input-password">Пароль</label>
-                <input type="password" name="password" value="" placeholder="пароль" id="input-password" class="form-control" />
+                <label class="control-label" for="p">Пароль</label>
+                <input type="password" name="p" value="" placeholder="пароль" id="p" class="form-control" />
                 <a href="/restore_password">Забыли пароль</a></div>
               <input type="submit" value="Вход" class="btn btn-primary" />
                           </form>
@@ -37,6 +37,39 @@ include_once 'header.php';
       </div>
     </div>
 </div>
+<script>
+  $("#loginform").on("submit", function (e) {
+        e.preventDefault();
+        var form = $(this);
+        var url = form.attr('action');
+        $.ajax({
+            type: "POST",
+            url: url,
+            data: form.serialize(),
+            success: function (data) {
+                /*console.log(data);*/
+                if (data.code === 0) {
+                    localStorage.setItem('jwt', data.jwt);
+                    sessionStorage.setItem("sid",data.jwt)
+                    //$('.modal').modal('hide');
+                    $('#count_in_favouritet').text(data.favouritet);
+                    //$('#login_exit_bth').html(`<a href="/users/account"><img src="/img/core-img/user_login.svg" alt="" title="Личный кабинет - ${data.name}"></a>`);
+                    //$('#exit-area').html(`<a href="/logout"  id="logoutBtn"><img src="/img/core-img/door-exit.svg" alt="">`);
+                    window.location.href = "/users/account";
+                } else {
+                    $('#login').addClass('is-invalid');
+                    $('#p').addClass('is-invalid');
+                    localStorage.removeItem('jwt');
+                }
+
+            },
+            error: function(xhr) { 
+                localStorage.removeItem('jwt');sessionStorage.removeItem('sid');
+            }
+        });
+    })
+  </script>
+
 
 <?php
 include_once 'footer.php';

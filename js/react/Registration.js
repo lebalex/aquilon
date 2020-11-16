@@ -124,11 +124,9 @@ export class Registration extends React.Component {
                 <div className="row">
                     <div className="col-12 col-sm-12 col-md-12">
                         <div className="col-12 mb-3">
-                            <div className="row">
-                                <div className="col-12">
-                                    <h5>Спасибо, вам отправлено письмо с подтверждение регистрации на сайте DSG Комплект. Письмо может попасть в папку "СПАМ"!</h5>
+                                <div className="col-12 ml-15">
+                                    <h5>Спасибо, вам отправлено письмо с подтверждение регистрации на сайте Аквилон. Письмо может попасть в папку "СПАМ"!</h5>
                                 </div>
-                            </div>
                         </div>
                     </div>
                 </div>

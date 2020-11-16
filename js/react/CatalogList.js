@@ -43,39 +43,11 @@ export class CatalogList extends React.Component {
       )
     window.addEventListener('scroll', this.handleScroll.bind(this));
 
-    /*const script = document.createElement("script");
-    script.src = "/js/superfish.js";
-    script.async = true;
-    document.body.appendChild(script);
 
-    const script2 = document.createElement("script");
-    script2.src = "/js/sfmenu.js";
-    script2.async = true;
-    document.body.appendChild(script2);
-
-    const script3 = document.createElement("script");
-    script3.src = "/js/jquery.rd-navbar.js";
-    script3.async = true;
-    document.body.appendChild(script3);*/
 
  
   }
-  /*componentDidUpdate(prevProps) {
-    const script = document.createElement("script");
-    script.src = "/js/superfish.js";
-    script.async = true;
-    document.body.appendChild(script);
 
-    const script2 = document.createElement("script");
-    script2.src = "/js/sfmenu.js";
-    script2.async = true;
-    document.body.appendChild(script2);
-
-    const script3 = document.createElement("script");
-    script3.src = "/js/jquery.rd-navbar.js";
-    script3.async = true;
-    document.body.appendChild(script3);
-  }*/
 
   ProductLists(c, p) {
     //console.log(c, p)
@@ -257,9 +229,10 @@ export class CatalogList extends React.Component {
       return <div>Ошибка: {error.message}</div>;
     } /*else if (!isLoadedP) {
       return <div className="row">Загрузка...</div>
-    }*/ else if (this.state.product_id != -1) {
+    }*/ else if (this.state.product_id != -1 && itemsProduct[0]!=undefined) {
       return <div className="row">
         {
+          /*console.log(this.state.product_id, itemsProduct[0])*/
           <ProductDetail items={itemsProduct[0]} id_categ={itemsProduct[0].id_categ} categ_name={this.getCategName(itemsProduct[0].id_categ)} />
         }
       </div>
@@ -307,7 +280,7 @@ export class CatalogList extends React.Component {
               <div className="row">
 
                 {arrayProd.map(item => (
-                  <ProductOne style={this.state.style} key={item.id} items={item} onClickProduct={() => this.clickProduct(item.id)} />
+                  <ProductOne style={this.state.style} key={item.id} items={item} onClickProduct={() => this.clickProduct(item.id)} url='#'/>
                 ))}
 
 

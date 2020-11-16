@@ -53,7 +53,7 @@
                             <td>
                                 <div style="padding-top: 10px;">
 
-                                    Вы можете сменить пароль пройдя по этой ссылке <a href="https://www.aquilon.ru/change_pwd/<?= $insert_id_user ?>/<?= $pwd_hash ?>">сменить пароль</a>
+                                    Вы можете сменить пароль пройдя по этой ссылке <a href="http://aquilon.lebalex.xyz/change_pwd/<?= $insert_id_user ?>/<?= $pwd_hash ?>">сменить пароль</a>
                                 </div>
                             </td>
                         </tr>

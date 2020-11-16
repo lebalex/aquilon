@@ -52,7 +52,14 @@ else
   return '/img/product-img/'+img.split(';')[0];
 }
 }
-
+getImage2(img)
+{
+if(img===null) return '/img/product-img/noPhoto.png';
+else 
+{
+  if(img.split(';').length()>1 )return '/img/product-img/'+img.split(';')[1];else return '/img/product-img/'+img.split(';')[0];
+}
+}
 
   
   render() {
@@ -68,18 +75,18 @@ let style = this.props.style;
                     
 
                         <div className="image">
-                            <a href="#"  onClick={this.props.onClickProduct}>
+                            <a href={this.props.url}   onClick={this.props.onClickProduct}>
                                 <img width="270" height="270" alt={item.name} title={item.name} 
                                  className="imgprimary" src={this.getImage(item.img)} />
                                 <img width="270" height="270" alt={item.name} title={item.name} 
-                                className="hover-img" src={this.getImage(item.img)} />
+                                className="hover-img" src={this.getImage2(item.img)} />
                             </a>
                          
 
                         </div>
 
                         <div className="caption">
-                            <div className="name"><a href="#"  onClick={this.props.onClickProduct}  >
+                            <div className="name"><a href={this.props.url}   onClick={this.props.onClickProduct}  >
                                         {item.name}
                                     </a></div>
                                     <div className="name">
@@ -100,7 +107,7 @@ let style = this.props.style;
                         </div>
 
                         <div className="aside">
-                            <div className="name"><a href="#"  onClick={this.props.onClickProduct}  >
+                            <div className="name"><a href={this.props.url}   onClick={this.props.onClickProduct}  >
                                         {item.name}
                                     </a></div>
                                     <div className="name">

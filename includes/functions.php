@@ -1,7 +1,6 @@
 <?php
 include_once 'psl-config.php';
 include_once 'db_connect.php';
-include  'models/categ_model.php';
 include  'models/user_model.php';
 date_default_timezone_set('Europe/Moscow');
 

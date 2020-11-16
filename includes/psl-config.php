@@ -8,7 +8,7 @@ define("DATABASE", "aquilon_db");    // The database name.
 
  
 
-define("DEFAULT_EMAIL", "lebalex@mail.ru");
+define("DEFAULT_EMAIL", "aquilon2015@mail.ru");
 
 define("CAN_REGISTER", "any");
 define("DEFAULT_ROLE", "member");

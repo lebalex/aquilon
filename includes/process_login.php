@@ -27,7 +27,7 @@ if (isset($_POST['login'], $_POST['p'])) {
         $jwt = createToken();
          $cart = array("code" => 0,"name" => $_SESSION['user']->getName(), "favouritet"=>getFavouritetDataCount(), "jwt" => $jwt);
     } else {
-        logout();
+        logout(false);
         $cart = array("code" => -1,"error" => '');
     }
     echo json_encode( $cart );

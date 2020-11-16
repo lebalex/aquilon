@@ -198,9 +198,7 @@ changeSearch(e)
     }else  {
       return (
         <div>
-<div className="row section-heading">
-<a href="orders" >назад</a>
-</div>
+
 <div className="row section-heading">
 
 <div className="col-12 mb-3">

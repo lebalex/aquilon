@@ -15,7 +15,7 @@ $pwd = getParam('pwd', '');
         <li><a href="/login">Личный кабинет</a></li>
         <li><span>Смена пароля</span></li>
     </ul>
-    <div id="data_page2">
+    <div id="data_page">
 
 
 

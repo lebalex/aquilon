@@ -155,13 +155,11 @@ export class CheckOut extends React.Component {
                 <div className="row">
                     <div className="col-12 col-sm-6 col-md-6">
                         <div className="col-12 mb-3">
-                            <div className="row">
-                                <div className="col-10">
+                            <div class="col-10 ml-15">
                                     <h4>Ваш заказ №{this.state.orderSendData} отправлен</h4>
                                     <p>
                                         Проверте свою электронную почту
                                 </p>
-                                </div>
                             </div>
                         </div>
                     </div>

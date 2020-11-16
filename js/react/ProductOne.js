@@ -93,7 +93,7 @@ let style = this.props.style;
                                         {item.art}
                                     </div>
                             <p className="price">
-                                <span>{new Intl.NumberFormat('ru-RU', {style: 'currency',currency: 'RUB',}).format(item.coast)}</span>
+                                <span>{(item.coast!=null & item.coast>0)?new Intl.NumberFormat('ru-RU', {style: 'currency',currency: 'RUB',}).format(item.coast):'Цена по запросу'}</span>
                             </p>
 
 
@@ -116,7 +116,7 @@ let style = this.props.style;
 
                             <p className="description">{item.description}</p>
                             <p className="price">
-                                {new Intl.NumberFormat('ru-RU', {style: 'currency',currency: 'RUB',}).format(item.coast)}
+                                {(item.coast!=null & item.coast>0)?new Intl.NumberFormat('ru-RU', {style: 'currency',currency: 'RUB',}).format(item.coast):'Цена по запросу'}
                             </p>
                             <button className="btn-primary" type="button" onClick={() => this.AddChart( item.id )}><i className="material-icons-add_shopping_cart"></i><span>в корзину</span></button>
                             <div className="clear"></div>

@@ -142,7 +142,7 @@ export class ProductDetail extends React.Component {
 
                     <li>
                       <strong>Остатки: </strong>
-                      <span className="stock">{item.count}</span>
+                      <span className="stock">{(item.count != null & item.count > 0) ? item.count : 'под заказ'}</span>
                     </li>
                   </ul>
 
@@ -152,25 +152,25 @@ export class ProductDetail extends React.Component {
 
 
 
-                  <div className="form-group form-horizontal">
+                              
+                  {/*<div className="form-group form-horizontal">
                     <div className="form-group">
                       <div className="col-sm-12">
                         <div className="quantity">
                           <label className="control-label" for="input-quantity">Кол-во</label>
                           <a className="counter counter-minus fa fa-caret-down" href="#"></a>
-                          <input type="text" name="quantity" value="1" size="2" id="input-quantity" className="form-control" />
-
-                          <a className="counter counter-plus fa fa-caret-up" href="#"></a>
+                                <input type="text" name="quantity" value="1" size="2" id="input-quantity" className="form-control" />
+                                <a className="counter counter-plus fa fa-caret-up" href="#"></a>
                         </div>
                       </div>
                     </div>
-                  </div>
+                    </div>*/}
 
                   <div className="price-section">
 
                     {/*<span className="price-old">$1,000.00</span>*/}
 
-                    <span className="price-new">{new Intl.NumberFormat('ru-RU', { style: 'currency', currency: 'RUB', }).format(item.coast)}</span>
+                    <span className="price-new">{(item.coast != null & item.coast > 0) ? new Intl.NumberFormat('ru-RU', { style: 'currency', currency: 'RUB', }).format(item.coast) : 'Цена по запросу'}</span>
 
                     <div className="reward-block">
 

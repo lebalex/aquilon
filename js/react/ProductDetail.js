@@ -146,6 +146,8 @@ export class ProductDetail extends React.Component {
                     </li>
                   </ul>
 
+                  <div dangerouslySetInnerHTML={{ __html: item.description }} />
+
                 </div>
                 <div id="product">
 

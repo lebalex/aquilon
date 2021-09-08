@@ -176,7 +176,8 @@ if ($obj == 'editproduct') {
     $art = htmlspecialchars(strip_tags(getParam('art', '')));
     $count = htmlspecialchars(strip_tags(getParam('count', '0')));
     $coast = htmlspecialchars(strip_tags(getParam('coast', '0')));
-    $description = htmlspecialchars(strip_tags(getParam('description', '')));
+    //$description = htmlspecialchars(strip_tags(getParam('description', '')));
+    $description = getParam('description', '');
     $imgs = htmlspecialchars(strip_tags(getParam('imgs', '')));
     if($imgs=='null')$imgs='';
 

@@ -20,7 +20,8 @@ sec_session_start();
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Аквилон</title>
-
+    <meta http-equiv="Pragma" content="no-cache" />
+	<meta http-equiv="Expires" content="0" />
 
     <meta name="description" content="Аквилон" />
 

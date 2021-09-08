@@ -57,7 +57,7 @@ getImage2(img)
 if(img===null) return '/img/product-img/noPhoto.png';
 else 
 {
-  if(img.split(';').length()>1 )return '/img/product-img/'+img.split(';')[1];else return '/img/product-img/'+img.split(';')[0];
+  if(img.split(';').length>1 )return '/img/product-img/'+img.split(';')[1];else return '/img/product-img/'+img.split(';')[0];
 }
 }
 
